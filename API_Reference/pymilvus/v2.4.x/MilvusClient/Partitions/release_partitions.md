@@ -1,6 +1,6 @@
 # release_partitions()
 
-This operation releases the partitions in a specified collection from memory.
+This operation releases the partitions in a specified collection from memory. 
 
 ## Request syntax
 
@@ -93,7 +93,7 @@ print(res)
 # {'state': <LoadState: Loaded>}
 
 # 5. Release the partition
-client.release_partitions(
+client.release_partitions( 
     collection_name="test_collection",
     partition_names=["partition_A"]
 )
@@ -112,12 +112,12 @@ res = client.get_load_state(
     collection_name="test_collection"
 )
 
-# {'state': <LoadState: Loaded>}
+# {'state': <LoadState: NotLoaded>}   
 ```
 
 ## Related methods
 
-- [create_partition()](create_partition.md)
+- [create_partition()](create_partition.md)  
 
 - [drop_partition()](drop_partition.md)
 
